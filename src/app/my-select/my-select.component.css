@@ -1,0 +1,18 @@
+.select-options, .selected {
+    border: 1px solid black;
+    width: 200px;
+}
+.selected-item {
+    width: 180px;
+}
+.close {
+    width: 20px;
+    cursor: pointer;
+}
+.selected {
+    display: flex;
+}
+.select-options {
+    position: absolute;
+    background-color: white;
+}

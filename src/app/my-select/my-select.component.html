@@ -1,0 +1,12 @@
+<div>
+    <div class="selected" (click)="toggleOpen()">
+        <div *ngIf="selectedOption" class="selected-item">{{selectedOption}}</div>
+        <div *ngIf="!selectedOption" class="selected-item">Select Item</div>
+        <div class="close" *ngIf="selectedOption" (click)="clearSelected()">x</div>
+    </div>
+    <div class="select-options" *ngIf="isOpen">
+        <div *ngFor="let option of options" class="select-option-item" (click)="selectItem(option)">
+            {{option}}
+        </div>
+    </div>
+</div>
